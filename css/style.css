@@ -1,0 +1,66 @@
+:root{
+    --fuentePrincipal: "Inter", sans-serif;
+    --fuenteSecundaria: "Montserrat", serif;
+
+    --primario: #FF7A00;
+    --secundario: #ffbb80;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #ECEBEB;
+}
+
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: var(--fuentePrincipal);
+}
+a{
+    text-decoration: none;
+}
+
+/*------------------HEADER------------------*/
+
+header{
+    background-color: var(--primario);
+    height: auto;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+.titulo{
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 40px;
+    margin: 10px;
+}
+.logout{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.centrar{
+    text-align: center;
+    align-items: center;
+}
+
+/*------------------MAIN-LOGIN-------------------*/
+
+.bg-gris{
+    background-color: var(--gris);
+    height: 500px;
+    border-radius: 15%;
+    margin-top: 60px;
+}
+.icon-login{
+    width: 30px;
+    height: 30px;
+}
+.cajas-lgin{
+    padding: 70px;
+}
