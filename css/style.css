@@ -6,7 +6,7 @@
     --secundario: #ffbb80;
     --blanco: #ffffff;
     --negro: #000000;
-    --gris: #ECEBEB;
+    --gris: #bfbfbf;
 }
 
 body{
@@ -63,4 +63,35 @@ header{
 }
 .cajas-lgin{
     padding: 70px;
+}
+
+/*------------------------PANTALLA PRINCIPAL DEL SISTEMA---------------------------*/
+
+.cuadros{
+    background-color: var(--primario);
+    border-radius: 20px;
+    border: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    height: 200px;
+}
+.cuadros-2{
+    background-color: var(--gris);
+    border-radius: 20px;
+    border: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    height: 200px;
+}
+.contenedor-cuad{
+    max-width: 90%;
+    margin: auto;
+}
+.texto-cuadro{
+    color: var(--blanco);
+    font-size: 50px;
+    padding: 8%;
+    font-weight: 500;
 }
