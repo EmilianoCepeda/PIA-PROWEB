@@ -48,6 +48,9 @@ header{
     text-align: center;
     align-items: center;
 }
+.texto-usuario{
+    font-weight: 700;
+}
 
 /*------------------MAIN-LOGIN-------------------*/
 
@@ -118,5 +121,20 @@ header{
     color: var(--blanco);
     font-size: 50px;
     padding: 8%;
+    font-weight: 500;
+}
+.cuadros-xs{
+    background-color: var(--primario);
+    border-radius: 20px;
+    border: 20px;
+    text-align: center;
+    margin: 20px;
+    height: 90px;
+    width: 93%;
+}
+.texto-cuadro-xs{
+    color: var(--blanco);
+    font-size: 40px;
+    padding: 10px;
     font-weight: 500;
 }
