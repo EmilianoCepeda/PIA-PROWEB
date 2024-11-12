@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Ventas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/politicas.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   
-    <div class="header">
-        
-        <div class="header-content">
-            <img src="img/logo.png" alt="Logo">
-            <h1 class="header-title">SISTEMA DE VENTAS</h1>
-        </div>
-        
-        <div class="user-info">
-            USUARIO: Usuariox 
-            <a href="index.html"><i class="fas fa-sign-out-alt" title="Salir"></i></a>
-        </div>
-        
-    </div>
 
-   
+    <header>
+        <div class="row justify-content-center bg-nav">
+            <div class="col-lg-3 centrar"><a href="index.html"> <img class="logo" src="img/logo.png " alt=""></a></div>
+            <div class="col-lg-6 centrar">
+                <p class="titulo">SISTEMA DE VENTAS</p>
+            </div>
+            <div class="row col-lg-3 centrar">
+                <div class="col-lg-8">
+                    <p class="texto-usuario">USUARIO: UsuarioX</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="index.html"><img class="logout" src="img/logout.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
     <div class="container">
-       
-        <div class="title">
-            <a href="principal.html"><i class="fas fa-arrow-left" title="Regresar"></i></a>
-            <span>Políticas de la empresa</span>
-        </div>
-        
-        
-        
-        <div class="content">
-            <h2>Misión:</h2>
-            <p>Nuestra misión es ofrecer pizzas deliciosas y de alta calidad con un servicio excepcional, creando una experiencia única para nuestros clientes en cada visita.</p>
+        <main>
 
-            <h2>Valores:</h2>
-            <ul>
-                <li><b>Calidad:</b> Usamos ingredientes frescos y de primera categoría.</li>
-                <li><b>Servicio:</b> Trato amable y rápido para asegurar la satisfacción del cliente.</li>
-                <li><b>Integridad:</b> Honestidad en nuestras operaciones, precios justos y prácticas éticas.</li>
-                <li><b>Innovación:</b> Innovamos constantemente en nuestros menús y procesos para sorprender a nuestros clientes.</li>
-                <li><b>Sostenibilidad:</b> Comprometidos con prácticas ecológicas, desde el embalaje hasta la reducción de desperdicios.</li>
-            </ul>
+            <div class="row btn-superior">
+                <div class="col-lg-4">
+                    <a href="principal.html">
+                        <button class="back-button" aria-label="Volver"><img class="flecha-izq" src="img/flechaizq.png"
+                                alt=""></button>
+                    </a>
+                </div>
+                <div class="col-lg-8 titulo-btn-superior">
+                    <p>Politica de la empresa</p>
+                </div>
+            </div>
 
-            <h2>Código de Conducta:</h2>
-            <ul>
-                <li>Trato: Tratar con respeto y consideración hacia clientes, compañeros de trabajo y proveedores.</li>
-                <li>Puntualidad: Llegar puntualmente y cumplir con los horarios establecidos.</li>
-                <li>Seguridad: Utilizar y mantener adecuadamente el equipo y los utensilios de trabajo.</li>
-                <li>Trabajo en Equipo: Fomentar la cooperación y el apoyo mutuo entre compañeros.</li>
-                <li>Responsabilidad: Ser responsable de los actos y asumir las consecuencias de nuestras acciones.</li>
-                <li>Higiene: Mantener estándares de seguridad alimentaria y asegurarse de que todos los empleados reciban formación en higiene.</li>
-                <li>Orden: Guardar equipo de protección necesario y mantener el área de trabajo limpia y segura en todo momento.</li>
-                <li>Seguridad laboral: Cumplir cualquier incidente o condición insegura para mejorar la seguridad.</li>
-            </ul>
-        </div>
+
+
+            <div class="container mt-5 contenido-politica">
+                <h2 class="text-center mb-4">Nuestra Misión</h2>
+                <p class="text-center">
+                    Brindar a nuestros clientes una experiencia memorable a través de pizzas deliciosas, preparadas con
+                    ingredientes de la más alta calidad, y un servicio excepcional que asegure su satisfacción en cada
+                    visita.
+                </p>
+
+                <h2 class="text-center mt-5 mb-4">Nuestros Valores</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Calidad:</b> Utilizamos ingredientes frescos y de primera categoría
+                        para garantizar el mejor sabor.</li>
+                    <li class="list-group-item"><b>Servicio:</b> Ofrecemos un trato amable y rápido, asegurando la
+                        satisfacción del cliente.</li>
+                    <li class="list-group-item"><b>Integridad:</b> Actuamos con honestidad, con precios justos y
+                        prácticas éticas.</li>
+                    <li class="list-group-item"><b>Innovación:</b> Innovamos continuamente en nuestros menús y procesos
+                        para sorprender a nuestros clientes.</li>
+                    <li class="list-group-item"><b>Sostenibilidad:</b> Nos comprometemos con prácticas ecológicas, desde
+                        el embalaje hasta la reducción de desperdicios.</li>
+                </ul>
+
+                <h2 class="text-center mt-5 mb-4">Código de Conducta</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Respeto:</b> Tratar con consideración a clientes, compañeros y
+                        proveedores.</li>
+                    <li class="list-group-item"><b>Puntualidad:</b> Cumplir con los horarios establecidos.</li>
+                    <li class="list-group-item"><b>Seguridad:</b> Usar y mantener adecuadamente el equipo de trabajo.
+                    </li>
+                    <li class="list-group-item"><b>Trabajo en equipo:</b> Fomentar la cooperación y el apoyo mutuo entre
+                        compañeros.</li>
+                    <li class="list-group-item"><b>Responsabilidad:</b> Asumir las consecuencias de nuestras acciones.
+                    </li>
+                    <li class="list-group-item"><b>Higiene:</b> Mantener altos estándares de seguridad alimentaria y de
+                        higiene personal.</li>
+                    <li class="list-group-item"><b>Orden:</b> Mantener el área de trabajo limpia y segura.</li>
+                    <li class="list-group-item"><b>Seguridad laboral:</b> Informar cualquier incidente o condición
+                        insegura.</li>
+                </ul>
+            </div>
     </div>
 </body>
+
 </html>
