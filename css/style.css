@@ -84,7 +84,7 @@ header{
 .bg-gris{
     background-color: var(--gris);
     height: 500px;
-    border-radius: 15%;
+    border-radius: 90px;
     margin-top: 60px;
 }
 .icon-login{
@@ -109,6 +109,7 @@ header{
   cursor: pointer;
   outline: none;
 }
+
 .btn-login:hover {
     background-color: var(--primario);
     box-shadow: 0px 15px 20px var(--negro);
@@ -279,4 +280,17 @@ th, td {
     border: none;
     padding: 10px 20px;
     background-color: #f8f9fa;
+}
+
+/*---------------------------------------QUIENES SOMOS-------------------------------------*/
+
+.titulo-nosot{
+    font-weight: 900;
+    font-size: 70px;
+    margin-top: 70px;
+}
+.texto-nosotros{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
