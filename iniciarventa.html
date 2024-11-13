@@ -33,14 +33,15 @@
     </header>
 
 
-    <div class="container">
+    <div class="contenedor-pantalla-venta">
 
 
         <main>
             <div class="row btn-superior">
                 <div class="col-lg-4">
                     <a href="principal.html">
-                        <button class="back-button" aria-label="Volver"><img class="flecha-izq" src="img/flechaizq.png" alt=""></button>
+                        <button class="back-button" aria-label="Volver"><img class="flecha-izq" src="img/flechaizq.png"
+                                alt=""></button>
                     </a>
                 </div>
                 <div class="col-lg-8 titulo-btn-superior">
@@ -53,20 +54,20 @@
             <div class="content">
                 <div class="sidebar">
                     <button class="sidebar-button">
-                        <span>🍕</span>
-                        <span>PIZZAS</span>
+                        <img class="icon-btn-sidebar" src="img/ICON-PIZZA.png" alt="">
+                        <p class="txt-btn-sidebar">PIZZAS</p>
                     </button>
                     <button class="sidebar-button">
-                        <span>🥤</span>
-                        <span>BEBIDAS</span>
+                        <img class="icon-btn-sidebar" src="img/ICON-BEBIDA.png" alt="">
+                        <p class="txt-btn-sidebar">BEBIDAS</p>
                     </button>
                     <button class="sidebar-button">
-                        <span>🍽️</span>
-                        <span>COMBOS</span>
+                        <img class="icon-btn-sidebar" src="img/ICON-COMBO.png" alt="">
+                        <p class="txt-btn-sidebar">COMBOS</p>
                     </button>
                     <button class="sidebar-button">
-                        <span>➕</span>
-                        <span>EXTRAS</span>
+                        <img class="icon-btn-sidebar" src="img/ICON-ADD.png" alt="">
+                        <p class="txt-btn-sidebar">EXTRAS</p>
                     </button>
                 </div>
                 <div class="main-content">
@@ -84,48 +85,78 @@
                             <input type="text" id="cliente">
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-4">
                             <label for="producto">Producto:</label>
                             <input type="text" id="producto">
                         </div>
-                        <div class="form-group">
+                        <div class="col-lg-4">
                             <label for="cantidad">Cantidad:</label>
                             <input type="text" id="cantidad">
                         </div>
+                        <div class="col-lg-4">
+                            <label for="cantidad">Codigo de producto:</label>
+                            <div class="row">
+                                <div class="col-lg-10"><input type="text" id="cantidad"></div>
+                                <div class="col-lg-2"><button><img class="icon-lupa" src="img/ICON-SEARCH.png"
+                                            alt=""></button></div>
+
+                            </div>
+                        </div>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Producto</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="totals">
-                        <div class="form-group">
-                            <label for="total">Total a pagar:</label>
-                            <input type="text" id="total" readonly>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tabla-columna-principal">Producto</th>
+                                        <th class="tabla-columna-principal">Precio</th>
+                                        <th class="tabla-columna-principal">Cantidad</th>
+                                        <th class="tabla-columna-principal">Subtotal</th>
+                                        <th class="columna-icon-trash"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tabla-info-productos"></td>
+                                        <td class="tabla-info-productos"></td>
+                                        <td class="tabla-info-productos"></td>
+                                        <td class="tabla-info-productos"></td>
+                                        <td class="tabla-info-productos"><button><img class="icon-trash"
+                                                    src="img/ICON-TRASH.png" alt=""></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="form-group">
-                            <label for="pago">Paga con:</label>
-                            <input type="text" id="pago">
+
+                        <div class="col-lg-4 cuadro-datos-venta">
+                            <div class="totals">
+                                <div class="form-group">
+                                    <p class="texto-datos-venta">Total a pagar:</p>
+                                    <input type="text" id="total" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <p class="texto-datos-venta">Paga con:</p>
+                                    <input type="text" id="pago">
+                                </div>
+                                <div class="form-group">
+                                    <p class="texto-datos-venta">Cambio:</p>
+                                    <input type="text" id="cambio" readonly>
+                                </div>
+                                <button class="create-sale">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="img-icon-money" src="img/ICON-MONEY.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="texto-btn-crearventa">CREAR VENTA</p>
+                                        </div>
+
+                                    </div>
+                                </button>
+
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="cambio">Cambio:</label>
-                            <input type="text" id="cambio" readonly>
-                        </div>
-                        <button class="create-sale">💵 CREAR VENTA</button>
                     </div>
                 </div>
             </div>
