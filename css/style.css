@@ -169,10 +169,7 @@ header{
 
 /*-----------------------------INICIAR UNA VENTA----------------------------------*/
 
-.contenedor-pantalla-venta{
-    width: 1400px;
-    margin: 20px auto;
-}
+
 .user-info {
     display: flex;
     align-items: center;
