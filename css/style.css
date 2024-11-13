@@ -12,7 +12,7 @@
 
 body, html{
     display: grid;
-    min-height: 100dvh;
+    height: 100vh;
     grid-template-rows: auto 1fr auto;
     margin: 0;
     padding: 0;
@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6, p{
 }
 a{
     text-decoration: none;
+}
+button{
+    border: none;
 }
 .container {
     display: flex;
@@ -226,6 +229,7 @@ main {
 }
 .tabla-info-productos{
     background-color: var(--gris);
+    height: 40px;
 }
 .columna-icon-trash{
     width: 30px;
@@ -238,6 +242,7 @@ main {
 .icon-lupa{
     width: 25px;
     height: 25px;
+    border: none;
 }
 .main-content {
     flex-grow: 1;
@@ -248,6 +253,7 @@ main {
 .form-row {
     display: flex;
     gap: 10px;
+    margin-top: -20px;
     margin-bottom: 10px;
 }
 .form-group {
@@ -342,4 +348,46 @@ th, td {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+/*--------------------------------------VER DETALLE DE UNA VENTA---------------------------------*/
+
+.contenido-detalle-venta{
+    background-color: var(--secundario);
+    height: auto;
+}
+.texto-buscador{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -10px;
+}
+.texto-informacion-venta{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contenedor-busqueda{
+    margin-top: 10px;
+}
+.contenedor-datos-venta{
+    background-color: var(--primario);
+    padding: 30px;
+    margin: 30px;
+}
+.texto-detalles-venta-post{
+    font-weight: 700;
+    font-size: 20px;
+}
+.contenedor-total-venta{
+    margin-top: 100px;
+}
+.icon-pdf{
+    width: 300px;
+    height: 300px;
+}
+.texto-generar-pdf{
+    color: var(--negro);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
 }
