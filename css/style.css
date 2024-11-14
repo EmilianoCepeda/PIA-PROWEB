@@ -364,7 +364,7 @@ th, td {
 .texto-informacion-venta{
     font-weight: 700;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 .contenedor-busqueda{
     margin-top: 10px;
@@ -390,4 +390,25 @@ th, td {
     font-weight: 700;
     font-size: 20px;
     margin-top: 10px;
+}
+
+/*----------------------------------------HISTORIAL DE VENTAS--------------------------------------*/
+
+.texto-informacion-venta-parte1{
+    margin-top: 15px;
+}
+.texto-buscar-historial{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: end;
+}
+.input-texto-historial-busqueda{
+    margin-top: 20px;
+}
+.contenedor-tabla-historial{
+    background-color: var(--primario);
+    padding: 30px;
+    margin: 30px;
+    height: 600px;
 }
