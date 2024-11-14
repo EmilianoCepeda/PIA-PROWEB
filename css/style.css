@@ -412,3 +412,30 @@ th, td {
     margin: 30px;
     height: 600px;
 }
+
+/*-----------------------------------------REPORTE DE VENTAS------------------------------------------*/
+#seleccion-tipo-reporte{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    margin-left: -80px;
+}
+.bloque-datos-reportes{
+    background-color: var(--gris);
+    margin-left: 30px;
+    height: 700px;
+}
+.titulo-cuadro-datos-reporte{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.texto-datos-recuadro-reporte{
+    font-weight: 700;
+    font-size: 20px;
+}
+.boton-pdf-generar{
+    margin-top: 200px;
+}

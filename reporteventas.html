@@ -47,19 +47,26 @@
                             </a>
                         </div>
                         <div class="col-lg-8 titulo-btn-superior">
-                            <p>Historial de ventas</p>
+                            <p>Reporte de ventas</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="contenido-detalle-venta">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <p class="texto-informacion-venta">Historial de venta:</p>
+                    <div class="col-lg-3">
+                        <p class="texto-informacion-venta">Que tipo de reporte deseas ver ?</p>
                     </div>
-                    <div class="col-lg-8 row contenedor-busqueda">
+                    <div class="col-lg-3">
+                        <select id="seleccion-tipo-reporte" name="reporte">
+                            <option value="diario">Diario</option>
+                            <option value="semanal">Semanal</option>
+                            <option value="mensual">Mensual</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 row contenedor-busqueda">
                         <div class="col-lg-6 row">
                             <div class="col-lg-6 text-end mt-3">
                                 <p class="texto-buscador texto-informacion-venta-parte1">FECHA INICIO:</p>
@@ -67,7 +74,7 @@
                             <div class="col-lg-6">
                                 <input class="texto-informacion-venta" type="text" placeholder="**/**/**">
                             </div>
-    
+
                         </div>
                         <div class="col-lg-6 row">
                             <div class="col-lg-6 text-end mt-3">
@@ -77,77 +84,65 @@
                                 <input class="texto-informacion-venta" type="text" placeholder="**/**/**">
                             </div>
                             <div class="col-lg-1">
-                                <button class="texto-informacion-venta"><img class="icon-lupa" src="img/ICON-SEARCH.png" alt=""></button>
+                                <button class="texto-informacion-venta"><img class="icon-lupa" src="img/ICON-SEARCH.png"
+                                        alt=""></button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row contenedor-datos-venta">
-                    <div class="col-lg-4">
-                        <button class="row">
-                            <div class="col-lg-3">
-                                <i class="fa-solid fa-file-excel fa-3x" style="color: #008000;"></i>
+
+                <div class="row">
+                    <div class="col-lg-4 row bloque-datos-reportes">
+                        <div class="col-lg-12">
+                            <p class="titulo-cuadro-datos-reporte">Datos de las fechas pedidas</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="texto-datos-recuadro-reporte">Total vendido:</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="texto-datos-recuadro-reporte">Pizzas vendidas:</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="texto-datos-recuadro-reporte">Refrescos familiares:</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="texto-datos-recuadro-reporte">Refrescos individuales:</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text">
+                        </div>
+                            <div class="col-lg-6">
+                            <p class="texto-datos-recuadro-reporte">Aderezos vendidos:</p>
                             </div>
-                            <div class="col-lg-9">
-                                <p class="texto-generar-pdf">Generar EXCEL</p>
+                            <div class="col-lg-6">
+                                <input type="text">
                             </div>
-                        </button>
+
+
+                            <div class="boton-pdf-generar">
+                                <button class="row">
+                                    <div class="col-lg-3">
+                                        <i class="fa-solid fa-file-pdf fa-3x" style="color: #f00000;"></i>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p class="texto-generar-pdf">Generar PDF</p>
+                                    </div>
+                                </button>
+                            </div>
                     </div>
-                    <div class="col-lg-8 row">
-                        <div class="col-lg-4">
-                            <p class="texto-buscar-historial">Buscar por:</p>
-                        </div>
-                        <div class="col-lg-3">
-                            <input class="input-texto-historial-busqueda" type="text">
-                        </div>
-                        <div class="col-lg-3">
-                            <input class="input-texto-historial-busqueda" type="text">
-                        </div>
-                        <div class="col-lg-1">
-                            <button class="texto-informacion-venta"><img class="icon-lupa" src="img/ICON-SEARCH.png" alt=""></button>
-                        </div>
-                        <div class="col-lg-1">
-                            <button class="texto-informacion-venta"><img class="icon-lupa" src="img/ICON-CLEAN.png" alt=""></button>
-                        </div>
-                    </div>
-                    
                 </div>
 
 
-                <div class="contenedor-tabla-historial">
-                    
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="tabla-columna-principal">FECHA REGISTRO</th>
-                                <th class="tabla-columna-principal">MONTO TOTAL</th>
-                                <th class="tabla-columna-principal">NUMERO DOCUMENTO</th>
-                                <th class="tabla-columna-principal">USUARIO REGISTRO</th>
-                                <th class="tabla-columna-principal">NOMBRE CLIENTE</th>
-                                <th class="tabla-columna-principal">CODIGO PRODUCTO</th>
-                                <th class="tabla-columna-principal">NOMBRE PRODUCTO</th>
-                                <th class="tabla-columna-principal">PRECIO VENTA</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-                                <td class="tabla-info-productos"></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
             </div>
 
 
