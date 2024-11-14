@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ventas - Reporte</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        :root {
+            --orange-primary: #FF6600;
+            --peach-bg: #FFE4CC;
+            --input-border: #00b0f0;
+        }
+        body {
+            background-color: white;
+        }
+        .header {
+            background-color: var(--orange-primary);
+            padding: 10px 20px;
+            height: 60px;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .header-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .user-section {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .user-icon {
+            width: 24px;
+            height: 24px;
+        }
+        .nav-section {
+            padding: 20px;
+        }
+        .back-link {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .report-button {
+            background-color: var(--orange-primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .report-button:hover {
+            background-color: #ff751a;
+            color: white;
+        }
+        .main-content {
+            background-color: var(--peach-bg);
+            padding: 20px;
+            margin: 0 20px;
+        }
+        .form-control {
+            border: 2px solid var(--input-border);
+        }
+        .data-section {
+            background-color: #D3D3D3;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="d-flex justify-content-between align-items-center h-100">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <h1 class="header-title">SISTEMA DE VENTAS</h1>
+            <div class="user-section">
+                <span>USUARIO: Usuariox</span>
+                <a href="index.html">
+                    <img src="img/logout.png" alt="User Icon" class="user-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-section">
+        <div class="d-flex align-items-center">
+            <a href="principal.html" class="back-link">←</a>
+            <button class="report-button">Reporte de ventas</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="reportType" class="form-label">¿Que tipo de reporte deseas ver?</label>
+                <select id="reportType" class="form-select">
+                    <option value="daily">Diario</option>
+                    <option value="weekly">Semanal</option>
+                    <option value="monthly">Mensual</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="startDate" class="form-label">FECHA INICIO:</label>
+                <input type="date" id="startDate" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="endDate" class="form-label">FECHA FIN:</label>
+                <input type="date" id="endDate" class="form-control">
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h3 class="mb-3">Datos de las fechas pedidas</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="totalSales" class="form-label">Total vendido:</label>
+                        <input type="text" id="totalSales" class="form-control" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pizzasSold" class="form-label">Pizzas vendidas:</label>
+                        <input type="text" id="pizzasSold" class="form-control" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="familyDrinks" class="form-label">Refrescos familiares:</label>
+                        <input type="text" id="familyDrinks" class="form-control" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="individualDrinks" class="form-label">Refrescos individuales:</label>
+                        <input type="text" id="individualDrinks" class="form-control" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sidesSold" class="form-label">Aderezos vendidos:</label>
+                        <input type="text" id="sidesSold" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reportType = document.getElementById('reportType');
+            const startDate = document.getElementById('startDate');
+            const endDate = document.getElementById('endDate');
+
+            function updateDateRange() {
+                const today = new Date();
+                let start = new Date(today);
+                let end = new Date(today);
+
+                switch(reportType.value) {
+                    case 'daily':
+                        // Start and end are the same (today)
+                        break;
+                    case 'weekly':
+                        start.setDate(today.getDate() - 7);
+                        break;
+                    case 'monthly':
+                        start.setMonth(today.getMonth() - 1);
+                        break;
+                }
+
+                startDate.value = start.toISOString().split('T')[0];
+                endDate.value = end.toISOString().split('T')[0];
+
+                // Aquí es donde normalmente se llamaría a la función para obtener datos de la base de datos
+                // fetchReportData(start, end);
+            }
+
+            reportType.addEventListener('change', updateDateRange);
+            startDate.addEventListener('change', () => {
+                // Aquí se llamaría a la función para obtener datos de la base de datos
+                // fetchReportData(new Date(startDate.value), new Date(endDate.value));
+            });
+            endDate.addEventListener('change', () => {
+                // Aquí se llamaría a la función para obtener datos de la base de datos
+                // fetchReportData(new Date(startDate.value), new Date(endDate.value));
+            });
+
+            // Inicializar con valores predeterminados
+            updateDateRange();
+        });
+    </script>
+</body>
+</html>
