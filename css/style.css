@@ -86,29 +86,30 @@ header{
 
 .bg-gris{
     background-color: var(--gris);
-    height: 500px;
-    border-radius: 90px;
-    margin-top: 60px;
+   padding: 40px 50px;
+    border-radius: 20px;
+    max-width: 600px; /* Ancho máximo para hacer el rectángulo más pequeño */
+    width: 100%; /* Asegura que no sobrepase el tamaño */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera para mejor presentación */
+    text-align: center;
+    margin: auto;
 }
 .icon-login{
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
-.cajas-lgin{
-    padding: 70px;
-}
+
 .btn-login{
-    padding: 1.3em 3em;
-  font-size: 12px;
+    padding: 0.5em 2em;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  font-weight: bold;
+  color: #fff;
+  background-color:#666;
   border: none;
-  border-radius: 45px;
+  border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease;
   cursor: pointer;
   outline: none;
 }
@@ -117,12 +118,75 @@ header{
     background-color: var(--primario);
     box-shadow: 0px 15px 20px var(--negro);
     color: #fff;
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
   
-  .btn-login:active {
-    transform: translateY(-1px);
-  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Para centrar verticalmente */
+}
+
+.text-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+/*----------------------------------MAIN-LOGIN---------------------------------------
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Para centrar verticalmente *
+}
+
+.bg-gris {
+    background-color: var(--gris);
+    padding: 40px 50px;
+    border-radius: 20px;
+    max-width: 600px; /* Ancho máximo para hacer el rectángulo más pequeño 
+    width: 100%; /* Asegura que no sobrepase el tamaño 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ligera para mejor presentación 
+    text-align: center;
+    margin: auto;
+}
+
+.icon-login {
+    width: 24px;
+    height: 24px;
+}
+
+.text-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-login {
+    padding: 0.5em 2em;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #666;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-login:hover {
+    background-color: var(--primario);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+} 
+*/
+
+
 
 /*------------------------PANTALLA PRINCIPAL DEL SISTEMA---------------------------*/
 
