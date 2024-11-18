@@ -33,6 +33,7 @@ button{
     flex-direction: column;
     height: 100%;
 }
+
 /*----------------------------------------BTN-SUPERIOR-------------------------------------*/
 .flecha-izq{
     width: 50px;
@@ -604,4 +605,43 @@ th, td {
     background-color: var(--primario);
     margin-left: 10px;
     height: auto;
+}
+
+.seleccion-tipo-reporte-producto {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+/*-----------------------------------------CATEGORIAS-----------------------------------------*/
+
+.texto-datos-recuadro-reporte-categoria {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: 40px;
+}
+
+.titulo-lista-categoria {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contenido-detalle-categoria {
+    background-color: var(--secundario);
+}
+
+.bloque-datos-categoria {
+    background-color: var(--primario);
+    margin-left: 10px;
+    height: auto;
+}
+
+.seleccion-tipo-reporte-categoria {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
 }
