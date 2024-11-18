@@ -86,29 +86,30 @@ header{
 
 .bg-gris{
     background-color: var(--gris);
-    height: 500px;
-    border-radius: 90px;
-    margin-top: 60px;
+   padding: 40px 50px;
+    border-radius: 20px;
+    max-width: 600px; 
+    width: 100%; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    margin: auto;
 }
 .icon-login{
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
-.cajas-lgin{
-    padding: 70px;
-}
+
 .btn-login{
-    padding: 1.3em 3em;
-  font-size: 12px;
+    padding: 0.5em 2em;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  font-weight: bold;
+  color: #fff;
+  background-color:#666;
   border: none;
-  border-radius: 45px;
+  border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease;
   cursor: pointer;
   outline: none;
 }
@@ -117,12 +118,21 @@ header{
     background-color: var(--primario);
     box-shadow: 0px 15px 20px var(--negro);
     color: #fff;
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
   
-  .btn-login:active {
-    transform: translateY(-1px);
-  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+
+.text-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
 
 /*------------------------PANTALLA PRINCIPAL DEL SISTEMA---------------------------*/
 
@@ -309,6 +319,90 @@ th, td {
 .img-icon-money{
     width: 140px;
     height: 140px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #FF6F00;
+    margin: 15% auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 3px solid #0066CC;
+}
+
+.modal-header {
+    background-color: #E0E0E0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 15px;
+}
+
+.item-list {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #E0E0E0;
+    border-bottom: 1px solid #ccc;
+}
+
+.item:nth-child(odd) {
+    background-color: #D3D3D3;
+}
+
+.add-icon {
+    color: #4CAF50;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+}
+
+.close-btn {
+    background-color: #E0E0E0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.close-btn:hover {
+    background-color: #D3D3D3;
 }
 /*-----------------------------------POLITICAS DE LA EMPRESA--------------------------------*/
 
