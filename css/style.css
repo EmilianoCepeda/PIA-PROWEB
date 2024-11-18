@@ -486,3 +486,28 @@ th, td {
     font-size: 30px;
     margin-top: 10px;
 }
+
+/*-----CORTE DE CAJA------*/
+
+.texto-datos-recuadro-reporte-productos {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: 40px;
+}
+
+.titulo-lista-productos {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contenido-detalle-productos {
+    background-color: var(--secundario);
+}
+
+.bloque-datos-productos {
+    background-color: var(--primario);
+    margin-left: 10px;
+    height: auto;
+}
